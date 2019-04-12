@@ -1,0 +1,91 @@
+/*页面头部*/
+.top {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.top-placeholder {
+    height: 81px;
+}
+
+/*头部内容*/
+.top_content {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.content_lef {
+    width: 200px;
+    float: left;
+}
+
+.content_nav {
+    height: 80px;
+    float: left;
+}
+
+/*头部li*/
+.content_nav li {
+    float: left;
+    list-style-type: none;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+/*头部a标签*/
+.content_nav a {
+    padding: 28px;
+    text-align: center;
+}
+.content_nav a:link {
+    color: #000;
+    text-decoration: none;
+}
+.top_content a:visited{
+    /*background-color: #9E5126;*/
+    /*color: #fff;*/
+    color: #9E5126;
+    text-decoration: none;
+}
+.content_nav a:hover{
+    color: #9E5126;
+    text-decoration: none;
+}
+.top_content a:active{
+    background: #9E5126;
+    color: #fff;
+    text-decoration: none;
+}
+.top_content a.active {
+    background: #9E5126;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top_content form {
+    width: 220px;
+    float: right;
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.top_content form .search {
+    display: inline-block;
+    height: 40px;
+    width: 220px;
+    padding: 0 40px 0 20px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 30px;
+    overflow: hidden;
+    color: #333;
+    margin-top: 2px;
+    outline:none;
+    background-color: #faf8fa;
+}
