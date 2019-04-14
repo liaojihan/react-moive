@@ -14,24 +14,24 @@
 }
 
 /*头部内容*/
-.top_content {
+.top .content {
     width: 1200px;
     height: 80px;
     margin: 0 auto;
 }
 
-.content_lef {
+.top .left {
     width: 200px;
     float: left;
 }
 
-.content_nav {
+.top .nav {
     height: 80px;
     float: left;
 }
 
 /*头部li*/
-.content_nav li {
+.top .nav li {
     float: left;
     list-style-type: none;
     line-height: 80px;
@@ -39,43 +39,43 @@
 }
 
 /*头部a标签*/
-.content_nav a {
+.top .nav a {
     padding: 28px;
     text-align: center;
 }
-.content_nav a:link {
+.top .nav a:link {
     color: #000;
     text-decoration: none;
 }
-.top_content a:visited{
+.top .nav a:visited{
     /*background-color: #9E5126;*/
     /*color: #fff;*/
     color: #9E5126;
     text-decoration: none;
 }
-.content_nav a:hover{
+.top .nav a:hover{
     color: #9E5126;
     text-decoration: none;
 }
-.top_content a:active{
+.top .nav a:active{
     background: #9E5126;
     color: #fff;
     text-decoration: none;
 }
-.top_content a.active {
+.top .nav a.active {
     background: #9E5126;
     color: #fff;
     text-decoration: none;
 }
 
-.top_content form {
+.top form {
     width: 220px;
     float: right;
     margin: 20px 0 0 0;
     position: relative;
 }
 
-.top_content form .search {
+.top form .search {
     display: inline-block;
     height: 40px;
     width: 220px;

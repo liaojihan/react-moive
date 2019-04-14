@@ -1,0 +1,258 @@
+.container {
+    margin-top: 150px;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.showing-up,
+.shown-soon,
+.showing-hot{
+    height: 780px;
+    margin-bottom: 50px;
+}
+
+.showing-up .movie-top,
+.shown-soon .movie-top,
+.showing-hot .movie-top {
+    width: 320px;
+    float: right;
+    height: 100%;
+}
+
+.showing-up .movie-grid,
+.shown-soon .movie-grid,
+.showing-hot .movie-grid {
+    float: left;
+    width: 800px;
+    height: 100%;
+}
+
+.showing-up .movie-grid .head,
+.shown-soon .movie-grid .head,
+.showing-hot .movie-grid .head {
+    height: 40px;
+}
+
+.showing-up .movie-grid .head img,
+.shown-soon .movie-grid .head img,
+.showing-hot .movie-grid .head img,
+.showing-hot .movie-top .head img,
+.shown-soon .movie-top .head img{
+    float: right;
+    margin-top: 12px;
+}
+
+.showing-up .movie-grid .head .all,
+.shown-soon .movie-grid .head .all,
+.showing-hot .movie-grid .head .all,
+.showing-hot .movie-top .head .all,
+.shown-soon .movie-top .head .all{
+    float: right;
+    line-height: 40px;
+}
+
+.showing-up .movie-grid .head .all  a:link, .showing-up .movie-grid .head .all  a:visited,
+.shown-soon .movie-grid .head .all  a:link, .shown-soon .movie-grid .head .all  a:visited,
+.showing-hot .movie-grid .head .all a:link, .showing-hot .movie-grid .head .all a:visited,
+.showing-hot .movie-top .head .all a:link, .showing-hot .movie-top .head .all a:visited,
+.shown-soon .movie-top .head .all a:link, .shown-soon .movie-top .head .all a:visited{
+    color: #9E5126;
+    text-decoration: none;
+}
+
+.showing-up .movie-grid .head .all  a:hover, .showing-up .movie-grid .head .all  a:active,
+.shown-soon .movie-grid .head .all  a:hover, .shown-soon .movie-grid .head .all  a:active,
+.showing-hot .movie-grid .head .all a:hover, .showing-hot .movie-grid .head .all a:active,
+.showing-hot .movie-top .head .all a:hover, .showing-hot .movie-top .head .all a:active,
+.shown-soon .movie-top .head .all a:hover, .shown-soon .movie-top .head .all a:active{
+    color: #9E5126;
+    text-decoration: underline;
+}
+
+.showing-up .movie-grid .head .hot,
+.shown-soon .movie-grid .head .hot,
+.showing-hot .movie-grid .head .hot,
+.showing-up  .movie-top .head .top-today,
+.shown-soon  .movie-top .head .top-today,
+.showing-hot .movie-top .head .top-today{
+    line-height: 40px;
+    font-size: 26px;
+    color: #9E5126;
+}
+
+.showing-up  .movie-grid .movie-list .movie_dl dd {
+    float: left;
+    margin: 10px 20px;
+}
+.shown-soon  .movie-grid .movie-list .movie_dl dd,
+.showing-hot .movie-grid .movie-list .movie_dl dd {
+    float: left;
+    margin: 10px 20px 0;
+}
+
+.run-date {
+    color: #999;
+    text-align: center;
+    font-size: 14px;
+}
+
+.showing-up  .movie-grid .movie-list .movie_dl dd .movie-item,
+.shown-soon  .movie-grid .movie-list .movie_dl dd .movie-item,
+.showing-hot .movie-grid .movie-list .movie_dl dd .movie-item {
+    max-width: 160px;
+    max-height: 220px;
+    overflow:hidden;
+    position: relative;
+}
+
+.showing-up  .movie-grid .movie-list .movie_dl dd .movie-item .position,
+.shown-soon  .movie-grid .movie-list .movie_dl dd .movie-item .position,
+.showing-hot .movie-grid .movie-list .movie_dl dd .movie-item .position {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 40px;
+    width: 100%;
+}
+
+.showing-up  .movie-grid .movie-list .movie_dl dd .movie-item .position span,
+.shown-soon  .movie-grid .movie-list .movie_dl dd .movie-item .position span,
+.showing-hot .movie-grid .movie-list .movie_dl dd .movie-item .position span {
+    color: #ffffff;
+    font-size: 16px;
+    position: absolute;
+    left: 10px;
+    line-height: 40px;
+}
+
+.showing-up  .movie-grid .movie-list .movie_dl dd .movie-item .position i,
+.shown-soon  .movie-grid .movie-list .movie_dl dd .movie-item .position i,
+.showing-hot .movie-grid .movie-list .movie_dl dd .movie-item .position i {
+    color: #ffb400;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    line-height: 40px;
+}
+
+.showing-up .movie-top .movie-list .movie-ul,
+.showing-hot .movie-top .movie-list .movie-ul,
+.shown-soon .movie-top .movie-list .movie-ul {
+    margin-top: 10px;
+}
+
+.showing-up .movie-top .movie-list .movie-ul li,
+.showing-hot .movie-top .movie-list .movie-ul li,
+.shown-soon .movie-top .movie-list .movie-ul li {
+    /*background: #CC3300;*/
+    list-style-type: none;
+}
+
+.showing-up .movie-top .movie-list .movie-ul .normal-span,
+.showing-hot .movie-top .movie-list .movie-ul .normal-span,
+.shown-soon .movie-top .movie-list .movie-ul .normal-span {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+}
+
+.showing-up .movie-top .movie-list .movie-ul a,
+.showing-hot .movie-top .movie-list .movie-ul a,
+.shown-soon .movie-top .movie-list .movie-ul a{
+    display: block;
+}
+
+.showing-up .movie-top .movie-list .movie-ul a:link,
+.showing-up .movie-top .movie-list .movie-ul a:visited,
+.showing-hot .movie-top .movie-list .movie-ul a:link,
+.showing-hot .movie-top .movie-list .movie-ul a:visited,
+.shown-soon .movie-top .movie-list .movie-ul a:link,
+.shown-soon .movie-top .movie-list .movie-ul a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.showing-up .movie-top .movie-list .movie-ul a:hover,
+.showing-hot .movie-top .movie-list .movie-ul a:hover,
+.shown-soon .movie-top .movie-list .movie-ul a:hover{
+    background-color: #F7F7F7;
+}
+
+.showing-up .movie-top .movie-list .movie-ul .normal-span .rank-index,
+.showing-up .movie-top .movie-list .movie-ul .normal-span .movie-name,
+.showing-hot .movie-top .movie-list .movie-ul .normal-span .rank-index,
+.showing-hot .movie-top .movie-list .movie-ul .normal-span .movie-name,
+.shown-soon .movie-top .movie-list .movie-ul .normal-span .rank-index {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.showing-up .movie-top .movie-list .movie-ul .normal-span .rank-index,
+.showing-hot .movie-top .movie-list .movie-ul .normal-span .rank-index,
+.shown-soon .movie-top .movie-list .movie-ul .normal-span .rank-index {
+    color: #999999;
+}
+
+.showing-up .movie-top .movie-list .movie-ul .normal-span .rank-index-top,
+.shown-soon .movie-top .movie-list .movie-ul .normal-span .rank-index-top,
+.showing-hot .movie-top .movie-list .movie-ul .normal-span .rank-index-top {
+    color: #EF4238;
+}
+
+.showing-up .movie-top .movie-list .movie-ul .normal-span .movie-box,
+.shown-soon .movie-top .movie-list .movie-ul .normal-span .movie-box,
+.showing-hot .movie-top .movie-list .movie-ul .normal-span .movie-box {
+    float: right;
+    color: #EF4238;
+}
+
+.showing-up .movie-top .movie-list .loading,
+.shown-soon .movie-top .movie-list .loading,
+.showing-hot .movie-top .movie-list .loading  {
+    width: 320px;
+    height: 600px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.movie-MAX {
+    width: 100%;
+    height: 100%;
+}
+
+.loadingImg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+
+.showing-up  .movie-grid .movie-list .movie_dl dd .movie-item .position.active,
+.shown-soon  .movie-grid .movie-list .movie_dl dd .movie-item .position.active,
+.showing-hot .movie-grid .movie-list .movie_dl dd .movie-item .position.active {
+    background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.3),
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.1));
+}
+
+
+
+
+
+
+
+

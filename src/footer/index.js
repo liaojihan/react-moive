@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {Component} from 'react'
+import './index.css'
 
-class Footer extends React.Component{
+class Footer extends Component{
     render (){
-        return "";
+        return (
+            <div className="footer">
+                <div className="content">
+                    <span>create Best Film @2019 by JiHanLiao</span>
+                </div>
+            </div>
+        );
     }
 }
 

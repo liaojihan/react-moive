@@ -8,7 +8,7 @@ class Header extends React.Component{
         super(props);
         this.handleStatus = this.handleStatus.bind(this);
         this.state = {
-            status: 0, //a标签状态，是否被点击，0:未点击 1:被点击
+            isClick: 0 //a标签状态，是否被点击，0:未点击 1:被点击
         }
     }
 
@@ -17,7 +17,11 @@ class Header extends React.Component{
     }
 
     handleStatus(event){
-        console.log(event.currentTarget);
+        let code = parseInt(event.currentTarget.getAttribute('index'));
+        this.setState({
+            isClick: code
+        });
+        this.props.codeHandler(code);
     }
 
     render (){
@@ -25,7 +29,7 @@ class Header extends React.Component{
         const nav_list = nav_ul.map( (value, index) => {
              return (
                  <li key={index}>
-                    <a href="javascript:void(0);" className={this.state.status === 0 ? 'active' : ''}
+                    <a index={index} href="javascript:void(0);" className={this.state.isClick === index ? 'active' : ''}
                        onClick={this.handleStatus}>
                         {value}
                     </a>
@@ -35,15 +39,18 @@ class Header extends React.Component{
         return (
             // 导航栏内容
             <div className="top">
-                <div className="top_content">
-                    <div className="content_left">
+                <div className="content">
+                    <div className="left">
                         <img src={topImage} alt=""/>
                     </div>
-                </div>
-                <div className="content_nav">
-                    <ul>
-                        {nav_list}
-                    </ul>
+                    <div className="nav">
+                        <ul>
+                            {nav_list}
+                        </ul>
+                    </div>
+                    <form>
+                        <input type="search" placeholder="找影片、找影人" className="search"/>
+                    </form>
                 </div>
             </div>
         );
